@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="徐州市海阔工程机械有限公司产品中心 - 沃尔沃挖机配件、沃尔沃装载机配件、沃尔沃铰卡配件、沃尔沃平地机配件、徐工挖掘机配件、临工挖掘机配件、临工装载机配件">
+    <meta name="keywords" content="沃尔沃挖机配件,沃尔沃装载机配件,沃尔沃铰卡配件,沃尔沃平地机配件,徐工挖掘机配件,临工挖掘机配件,临工装载机配件,工程机械配件">
+    <title>产品中心 - 徐州市海阔工程机械有限公司</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">徐州市海阔工程机械有限公司</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html" class="active">产品中心</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="products-section">
+                <h1>产品中心</h1>
+                <p class="section-subtitle">专业工程机械配件产品展示</p>
+                
+                <!-- 产品图片网格 -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- 产品图片将通过JavaScript动态加载 -->
+                </div>
+
+                <!-- 分页控件 -->
+                <div class="pagination">
+                    <button class="page-btn" id="prevPage" onclick="changePage(-1)">上一页</button>
+                    <span class="page-info">
+                        <span id="currentPage">1</span> / <span id="totalPages">2</span>
+                    </span>
+                    <button class="page-btn" id="nextPage" onclick="changePage(1)">下一页</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 图片放大模态框 -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="产品图片">
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 徐州市海阔工程机械有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
